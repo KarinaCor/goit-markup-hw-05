@@ -625,8 +625,8 @@ body {
     overflow: hidden;
 }
 
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
+.portfolio-work-link:hover .overlay,
+.portfolio-work-link:focus .overlay {
     transform: translateY(0%);
     transform: translateY(0%);
 }
