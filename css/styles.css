@@ -134,6 +134,7 @@ body {
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
+    position: relative;
 }
 
 
@@ -142,8 +143,9 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px; 
+    bottom: -1px;
     height: 4px;
+    width: 48px;
     background-color: #404bbf;
     border-radius: 2px;
 }
@@ -155,7 +157,6 @@ body {
 
 .port-button-descr {
     padding: 24px 0;
-    position: relative;
 }
 
 
@@ -207,7 +208,7 @@ body {
     padding: 12px 24px;
     border: 1px solid #e7e9fc;
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -240,7 +241,8 @@ body {
     height: 56px;
     border: none;
     margin: 0 auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
 
 }
 
@@ -546,7 +548,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #8e8f99;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-h:hover,
@@ -600,22 +602,22 @@ body {
 }
 
 .overlay {
-font-family: 'Roboto'sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.02em;
-color: #F4F4FD;
-background-color: #4D5AE5;
-padding: 40px 32px;
-position: absolute;
-top: 0%;
-left: 0%;
-width: 100%;
-height: 100%;
-transform: translate(0px,100%);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform: translate(0px, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .employees-list-img {
@@ -625,7 +627,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-item:hover .overlay,
 .portfolio-item:focus .overlay {
-transform: translate(0%);
+    transform: translateY(0%);
+    transform: translateY(0%);
 }
 
 .footer-container {
@@ -692,16 +695,16 @@ transform: translate(0%);
 }
 
 .modal {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   width: 408px;
-   min-height: 576px;
-   background-color: #fcfcfc;
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 576px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
@@ -719,7 +722,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+
 
 }
 
@@ -727,15 +730,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close-button:focus {
     background: #404BBF;
     border: none;
+    fill: #ffffff;
 }
 
 .modal-close-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
